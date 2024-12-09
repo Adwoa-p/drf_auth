@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-=flep&f7vo5^xmky66&@pi3xqe-f#a#k9hy1oz@&*_z^5zms^d
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "https://drf-auth-hsjl.onrender.com/",
+    "drf-auth-hsjl.onrender.com",
 ]
 
 
