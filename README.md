@@ -61,22 +61,10 @@ Body:
 
 3. GET  Token
   Endpoint: /test_token/
-  Method: POST
+  Method: GET
   Description: Tests token to validate user and sends user email as response.
+*Example Request in Postman*
+GET   http://127.0.0.1:8000/test_token/ 
+    Authorization: Bearer Token fbf32dc0321d15f8509eaa99c33afe26abb00e17
 *Example Request*
-GET   http://127.0.0.1:8000/test_token/
-Body:
-     {
-            "book_title": "The Annointing",
-            "book_author": "Benny Hinn"
-        }
-*Example Response*
-Status: 201 CREATED
-Body:
-    [
-        {
-            "book_id": 3,
-            "book_title": "The Annointing",
-            "book_author": "Benny Hinn"
-        }
-       ]
+    passed for john@gmail.com
