@@ -8,18 +8,19 @@ This API allows users to sign in, sign up and test tokens generated.
   Description: Allows user to sign up with username, password and email.
 *Example Request*
 GET   http://127.0.0.1:8000/signup
-Body:
-`[
+```Body:
+[
         {
             "username": "John",
             "password": "1234pass",
             "email": "john@gmail.com"
         }
-       ]`
+       ]
+```
 *Example Response*
 Status: 200 OK
 Body:
-`[
+```[
     {
         "token": "fbf32dc0321d15f8509eaa99c33afe26abb00e17",
         "user": {
@@ -29,25 +30,27 @@ Body:
             "email": "john@gmail.com"
             }
     }
-       ]`
+       ]
+```
    
-2. POST Log in
+3. POST Log in
   Endpoint: /login/
   Method: POST
   Description: Allows an existing user to log in.
 *Example Request*
 POST   http://127.0.0.1:8000/login
-Body:
-    `[
+```Body:
+    [
         { 
             "username": "John",
             "password": "1234pass"
         }
-       ]`
+       ]
+```
 *Example Response*
 Status: 200 OK
-Body:
-    `[
+```Body:
+    [
         {
     "token": "fbf32dc0321d15f8509eaa99c33afe26abb00e17",
     "user": {
@@ -57,9 +60,10 @@ Body:
         "email": "john@gmail.com"
     }
 }
-       ]`
+       ]
+```
 
-3. GET  Token
+4. GET  Token
   Endpoint: /test_token/
   Method: GET
   Description: Tests token to validate user and sends user email as response.
