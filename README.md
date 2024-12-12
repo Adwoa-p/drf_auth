@@ -19,8 +19,8 @@ GET   http://127.0.0.1:8000/signup
 ```
 *Example Response*
 Status: 200 OK
-Body:
-```[
+```Body:
+  [
     {
         "token": "fbf32dc0321d15f8509eaa99c33afe26abb00e17",
         "user": {
@@ -69,6 +69,6 @@ Status: 200 OK
   Description: Tests token to validate user and sends user email as response.
 *Example Request in Postman*
 GET   http://127.0.0.1:8000/test_token/ 
-   ` Authorization: Bearer Token fbf32dc0321d15f8509eaa99c33afe26abb00e17`
+   ``` Authorization: Bearer Token fbf32dc0321d15f8509eaa99c33afe26abb00e17```
 *Example Request*
-    `passed for john@gmail.com`
+    ```passed for john@gmail.com```
