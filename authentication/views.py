@@ -1,14 +1,15 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .serializers import UserSerializer
-from rest_framework import status
+from rest_framework import status, generics, permissions, viewsets
 from rest_framework.authtoken.models import Token
 from django.contrib.auth.models import User
 from django.shortcuts import get_object_or_404
 from rest_framework.decorators import authentication_classes, permission_classes
 from rest_framework.authentication import SessionAuthentication, TokenAuthentication # To authenticate sessions with a token
 from rest_framework.permissions import IsAuthenticated # to declare that an api only works if user is authenticated
-# from knox.models import Authtoken
+# from knox.models import AuthToken
+
 
 @api_view(['POST'])
 def signup(request):
