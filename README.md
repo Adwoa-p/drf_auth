@@ -59,7 +59,7 @@ This API project is designed to provide secure access to various resources via R
 
 ### **Test Token**
 - **Method**: GET
-- **URL**: `BASE_URL/test-token/`
+- **URL**: `BASE_URL/test_token/`
 - **Headers**:
 ```json
 {
@@ -79,7 +79,7 @@ This API project is designed to provide secure access to various resources via R
 
 ### **Retrieve User Details**
 - **Method**: GET
-- **URL**: `BASE_URL/users/token`
+- **URL**: `BASE_URL/user`
 - **Authentication**: Required
 - **Headers**:
 ```json
@@ -90,6 +90,7 @@ This API project is designed to provide secure access to various resources via R
 - **Response**:
 ```json
 {
+    "user_id": 1,
     "first_name": "Maame",
     "last_name": "Naa",
     "username": "maame",
@@ -102,7 +103,7 @@ This API project is designed to provide secure access to various resources via R
 
 ### **Edit User Details**
 - **Method**: POST
-- **URL**: `BASE_URL/users/token/`
+- **URL**: `BASE_URL/user`
 - **Authentication**: Required
 - **Headers**:
 ```json
