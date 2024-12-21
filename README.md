@@ -1,7 +1,8 @@
 # API Documentation
 
 ## **Project Overview**
-This API project is designed to provide secure access to various resources via RESTful endpoints. The project uses SQLite as its database, providing a lightweight and efficient solution for local storage during development. For production environments, switching to a robust database like PostgreSQL is recommended. The project leverages Django for backend management and Django Rest Framework (DRF) for building the API, with an authentication layer implemented to enhance security and control user access.
+<p>This API project is designed to provide secure access to various resources via RESTful endpoints. The project uses SQLite as its database, providing a lightweight and efficient solution for local storage during development. For production environments, switching to a robust database like PostgreSQL is recommended. The project leverages Django for backend management and Django Rest Framework (DRF) for building the API, with an authentication layer implemented to enhance security and control user access.</p>
+
 ` BASE_URL: http://127.0.0.1:8000/ `
 ---
 
