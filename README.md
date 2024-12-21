@@ -121,7 +121,7 @@ This API project is designed to provide secure access to various resources via R
     "first_name": "Maame",
     "last_name": "Naa",
     "username": "maame",
-    "email": "maame@example.com",
+    "email": "maame.naa@example.com",
     "password": "123password",
     "phone_number": "27783674",
     "date_joined": "2024-12-01T14:23:00Z"
