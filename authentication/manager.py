@@ -9,7 +9,7 @@ class UserManager(BaseUserManager):
         try:
             validate_email(email)
         except ValidationError:
-            raise ValueError(_("please enter a vlid email"))
+            raise ValueError(_("please enter a valid email"))
         
 
     def create_user(self, email, first_name, last_name, password, **extra_fields):
